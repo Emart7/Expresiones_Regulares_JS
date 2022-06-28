@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+<body>
+    
+    <script>
+        //Ver en la consola del navegador
+        //Probar los ejercicios en la pagina del index
+
+        const text = '11a22b33c';
+
+        // const expresion = new RegExp('(\\d\\d\\w)','g');
+        const expresion = /(\d\d)(\w)/g;
+
+        console.log(expresion.test(text));
+
+        expresion.lastIndex = 0;
+
+        while(resultado = expresion.exec(text)){
+            console.log(resultado);
+        }
+
+    </script>
+
+    <script src="ejercicios/Cambio_Fecha.js"></script>
+    <script src="ejercicios/Cambio_Split.js"></script>
+    <script src="ejercicios/Retorno_Match.js"></script>
+
+
+</body>
+</html>
